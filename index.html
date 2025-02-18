@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card">
+    <h1>My Day</h1>
+    <p id="current-date"></p>
+
+    <h2>Completed <span id="completed-count">0</span></h2>
+    <button class="toggle-completed" type="button" onclick="toggleCompletedTasks()">Show Completed Tasks</button>
+    <div class="collapse" id="completed-tasks">
+      <ul id="completed-list"></ul>
+    </div>
+
+    <div class="new-task">
+      <input id="new-task" type="text" placeholder="Add a new task" />
+      <button onclick="addTask()">Add Task</button>
+    </div>
+
+    <ul id="task-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
